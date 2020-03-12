@@ -12,13 +12,13 @@ class Customer
   end
 
   def new_meal(waiter, total, tip)
-    new_meal = Meal.new(waiter, self, total, tip)
+    Meal.new(waiter, self, total, tip)
   end
   def meals
     Meal.all.collect {|meal| meal.customer == @name}
   end
 
   def waiters
-    
+
   end
 end
