@@ -13,9 +13,8 @@ class Customer
 
   def new_meal(waiter, total, tip)
     new_meal = Meal.new(waiter, self, total, tip)
-    @meals << new_meal
   end
   def meals
-
+    Meal.all.collect {|meal| meal.}
   end
 end
