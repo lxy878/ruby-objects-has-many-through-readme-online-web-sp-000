@@ -15,7 +15,7 @@ class Customer
     Meal.new(waiter, self, total, tip)
   end
   def meals
-    Meal.all.collect {|meal| meal.customer == @name}
+    Meal.all.collect {|meal| meal if meal.customer == @name}
   end
 
   def waiters
