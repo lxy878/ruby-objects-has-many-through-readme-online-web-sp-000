@@ -18,5 +18,7 @@ class Customer
     Meal.all.collect {|meal| meal.customer == @name}
   end
 
-  def wa
+  def waiters
+    
+  end
 end
